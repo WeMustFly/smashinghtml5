@@ -1,0 +1,24 @@
+body {
+}
+
+.wrapper {
+	max-width: 500px;
+	margin: auto;
+}
+
+.wrapper h1 {
+	color: blue;
+}
+
+.wrapper h1 + p {
+	color: green;
+}
+
+.wrapper b ~ p {
+	color: pink;
+}
+
+.wrapper [src] {
+	width: 200px;
+	height: 600px;
+}
