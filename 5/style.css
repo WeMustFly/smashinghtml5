@@ -1,4 +1,4 @@
-* {
+*{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,13 +23,13 @@ h1{
 	font-size: 18px;
 }
 
-ul {
+ul{
 	font-size: 0;
 	border-top: 3px solid #eaffff;
 	border-left: 3px solid #eaffff;
 }
 
-li {
+li{
 	list-style-type: none;
 	display: inline-block;
 	border-right: 3px solid #eaffff;
