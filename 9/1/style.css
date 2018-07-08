@@ -1,0 +1,28 @@
+body{
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+header {
+	background-image: url('image/computer.jpg');
+	height: 650px;
+	color: #ffffff;
+}
+
+header .wrapper {
+	max-width: 1140px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 272px;
+}
+
+h1 {
+	font-family: "Big John";
+	font-size: 46px;
+	text-transform: uppercase;
+}
+
+header p {
+	font-family: "Slim Joe";
+	font-size: 30px;
+}
