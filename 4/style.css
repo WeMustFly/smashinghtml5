@@ -1,0 +1,9 @@
+body {
+	color: #fff;
+}
+
+/* https://css-tricks.com/almanac/selectors/c/checked/ */
+input[type=checkbox]:checked + label {
+  color: #6c6c6c;
+  text-decoration: line-through;
+}
