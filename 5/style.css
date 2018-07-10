@@ -84,3 +84,7 @@ li:nth-child(11){
 	background-color: green;
 	width: 100%;
 }
+
+ul:hover li:not(:hover){
+  opacity: 0.5;
+}
