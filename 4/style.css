@@ -1,10 +1,64 @@
 body {
-	background-color: #000;
-	color: #fff;
+    background-color: gray;
+    color: #fff;
+    width: 100%;
+    font-family: Arial;
+    padding: 0;
+    margin: 0;
+}
+
+header,
+footer {
+    padding: 10px 0;
+    background-color: silver;
+    text-align: center;
+    color: Fuchsia;
+}
+
+header h1,
+header p,
+main,
+footer {
+    width: 400px;
+    margin: 0 auto;
 }
 
 /* https://css-tricks.com/almanac/selectors/c/checked/ */
-input[type=checkbox]:checked + label {
-  color: #6c6c6c;
-  text-decoration: line-through;
+input[type=checkbox]:checked+label {
+    color: #6c6c6c;
+    text-decoration: line-through;
+    background-color: DodgerBlue;
+}
+
+input[type=checkbox] {
+    display: block;
+    position: absolute;
+    margin: 8px;
+}
+
+label {
+    padding: 6px 5px 6px 30px;
+    width: 365px;
+    float: left;
+}
+
+footer {
+    clear: both;
+}
+
+ul {
+    background-color: RoyalBlue;
+    padding-left: 0;
+    list-style: none;
+}
+
+li {
+    height: 30px;
+    position: relative;
+}
+
+li:hover {
+    background-color: CornflowerBlue;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
