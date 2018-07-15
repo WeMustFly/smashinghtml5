@@ -1,0 +1,46 @@
+.wrapper { }
+.wrapper__overlay  { }
+
+.header { }
+
+.logo {  }
+.nav {  }
+.nav__item {}
+.nav__item--active {}
+.btn-menu {  }
+
+.container {  }
+.container--back {}
+.container--middle {}
+/**
+.container::before
+.container::after
+*/
+
+.product {  }
+.btn-close {}
+.btn-close--product {}
+
+.slider {}
+.slider__brand {}
+.slider__main-picture {}
+.slider__list {}
+.slider__item {}
+.slider__small-picture {}
+.btn-zoom {}
+.btn-zoom--slider {}
+
+.label-new {}
+
+.product__title {}
+.product__brand {}
+.product__price {}
+.rating {}
+
+.size {}
+.size__list {}
+.size__item {}
+.size__item--active {}
+
+.btn-add {}
+.btn-wishlist {}
