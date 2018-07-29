@@ -1,0 +1,254 @@
+.ba-container {
+    font: 300 14px/1.3 'Lato', sans-serif;
+    width: 1920px;
+    color: #3c3c3c;
+    text-align: center;
+}
+
+.ba-row {
+    margin-left: 0;
+}
+
+.ba-row+.ba-row {
+    margin-top: 160px;
+}
+
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    fill: #3c3c3c;
+}
+
+.icon * {
+    fill: inherit;
+}
+
+.icon__title {
+    display: block;
+    margin: 40px auto;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.icon__description {}
+
+.ba-row--icon+.ba-row--icon {
+    margin-top: 30px;
+}
+
+.icon--shape2 {
+    width: 80px;
+    height: 83px;
+}
+
+.icon--shape3 {
+    width: 77px;
+    height: 80px;
+}
+
+.icon--shape4 {
+    width: 79px;
+    height: 91px;
+}
+
+.icon--white {
+    fill: #ffffff;
+}
+
+.header {
+    width: 100%;
+    height: 1072px;
+    padding-top: 285px;
+    color: #ffffff;
+    background-image: url('../img/header-bg.png');
+
+    position: relative;
+    text-transform: uppercase;
+
+    margin-bottom: 160px;
+}
+
+.header__logo {
+    margin-bottom: 100px;
+    width: 67px;
+    height: 70px;
+}
+
+.header__title {
+    font-size: 54px;
+    font-weight: 700;
+    width: 30%;
+    min-width: 600px;
+    margin: 0 auto 50px;
+}
+
+.header__description {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 29px;
+    width: 30%;
+    min-width: 600px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 67px;
+    height: 70px;
+}
+
+.scroll {
+    display: inline-block;
+    position: absolute;
+    bottom: 115px;
+    width: 23px;
+    height: 37px;
+}
+
+.info {
+    margin: 0 auto;
+    border-width: 0 2px 2px 2px;
+    border-color: #3c3c3c;
+    border-style: solid;
+    width: 50%;
+    min-width: 600px;
+    padding: 75px 170px 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.info__title {
+    text-transform: uppercase;
+    position: absolute;
+    top: -10px;
+    display: inline-block;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    margin-left: -50%;
+}
+
+.info__title:before,
+.info__title:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 1.5px;
+    background: #3c3c3c;
+    z-index: -1;
+    position: relative;
+    vertical-align: middle;
+}
+
+.info__title--service::before,
+.info__title--service::after {
+    background: #ffffff;
+}
+
+.info__title:before {
+    right: 100px;
+    margin: 0 0 0 -100%;
+}
+
+.info__title:after {
+    left: 100px;
+    margin: 0 -100% 0 0;
+}
+
+.info__text {
+    margin: 0 auto;
+    width: 60%;
+    min-width: 550px;
+}
+
+.info__text+.info__text {
+    margin-top: 10px;
+}
+
+.ba-row--service {
+    background-image: url('../img/services.png');
+    height: 488px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.info--service {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.work {
+    float: left;
+    position: relative;
+    width: 548px;
+    height: 236px;
+    overflow: hidden;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.work--center {
+    width: 800px;
+}
+
+.work__pic {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.work__text {
+    text-transform: uppercase;
+    position: absolute;
+    left: 50px;
+    bottom: 40px;
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.info__text--contact-us {
+    margin-bottom: 40px;
+}
+
+.btn {
+    border-width: 2px;
+    border-color: #3c3c3c;
+    border-style: solid;
+    background-color: #3c3c3c;
+    width: 391px;
+    height: 54px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.footer__logo {
+    width: 50px;
+    height: auto;
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.footer__text {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
