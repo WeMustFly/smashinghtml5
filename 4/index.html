@@ -1,66 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>CSS Diner Shopping List</title>
-	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	<header>
-		<h1>CSS Diner Shopping List</h1>
-		<p>Let's go to the mall!</p>
-	</header>
+	<form>
+		<input id="task" type="text" name="task" placeholder="Add a new task...">
+		<button id="addTask">Add</button>
+	</form>
+	<!-- ul>li*6>input[type=checkbox name=goods value]+label>small -->
+	<h2>Todo</h2>
+	<ul id="todo-list"></ul>
+	<h2>Completed</h2>
+	<ul id="completed-list"></ul>
 
-	<main>
-		<!-- ul>li*6>input[type=checkbox name=goods value]+label>small -->
-		<ul>
-			<li>
-				<input type="checkbox" name="goods" value="">
-				<label>
-					A lot of pickles
-					<small>(for the next lessons about CSS)</small>
-				</label>
-			</li>
-			<li>
-				<input type="checkbox" name="goods" value="">
-				<label>
-					10 apples
-					<small>(for more CSS manipulations)</small>
-				</label>
-			</li>
-			<li>
-				<input type="checkbox" name="goods" value="">
-				<label>
-					20 oranges
-					<small>(because they are awesome)</small>
-				</label>
-			</li>
-			<li>
-				<input type="checkbox" name="goods" value="">
-				<label>
-					13 plates
-					<small>(hm... they always disappear)</small>
-				</label>
-			</li>
-			<li>
-				<input type="checkbox" name="goods" value="">
-				<label>
-					15 bentos
-					<small></small>
-				</label>
-			</li>
-			<li>
-				<input type="checkbox" name="goods" value="">
-				<label>
-					1 bottle of Sake ^_^
-					<small>for my friends)</small>
-				</label>
-			</li>
-		</ul>
-	</main>
+	<script id="task-li" type="text/template">
+		<li>
+			<input data-pos="{{ pos }}" type="checkbox" name="checkbox{{ pos }}" value="" onclick="complete(this);" {{ completed }}>
+			<label data-pos="{{ pos }}">{{ todo }}</label>
+			<input data-pos="{{ pos }}" type="text" name="text{{ pos }}" value="{{ todo }}" style="display: none;">
+			<button data-pos="{{ pos }}" onclick="del(this);">Delete</button>
+			<button class="btn--edit" data-pos="{{ pos }}" onclick="edit(this);">Edit</button>
+			<button class="btn--save" data-pos="{{ pos }}" onclick="save(this);" style="display: none;">Save</button>
+		</li>
+	</script>
 
-	<footer>
-		<p>Bon appetit :)</p>
-	</footer>
+	<script src="script.js"></script>
 </body>
+
 </html>

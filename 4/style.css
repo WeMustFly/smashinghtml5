@@ -62,3 +62,18 @@ li:hover {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
 }
+
+form {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+}
+
+form > input {
+    width: 60%;
+    margin-right: 5%;
+}
+
+form > button {
+    width: 30%;
+}
